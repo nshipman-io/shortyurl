@@ -1,0 +1,9 @@
+{{ define "urlform" }}
+    <form class="col-sm-20 offset-1"action="/api/shorturl/new" method="POST">
+        <div class="form-group row justify-content-center">
+            <label for="url">URL</label>
+            <input type="url" class="form-control" id="url" aria-describedby="url" placeholder="Enter Valid URL" name="original_url">
+        </div>
+        <button type="submit" value="url" class="btn btn-primary">Submit</button>
+    </form>
+{{ end }}
